@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>com.brazil - Educação e Tecnologia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #ffcc00;
+    }
+    nav {
+      background-color: #002244;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: linear-gradient(to right, #003366, #000000);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ffeb99;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .course {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .course:hover {
+      transform: translateY(-5px);
+    }
+    .course h3 {
+      color: #003366;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+    footer {
+      background-color: #000000;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>com.brazil</h1>
+    <p>Educação e Tecnologia para o Futuro</p>
+  </header>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transforme seu Futuro com Tecnologia</h2>
+    <p>Aprenda, evolua e entre no mercado com cursos práticos e acessíveis.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a com.brazil</h2>
+    <p>A com.brazil é uma iniciativa dedicada à formação técnica e tecnológica, oferecendo cursos acessíveis e focados em preparar alunos para o mercado de trabalho. Nosso objetivo é capacitar pessoas para atuar em áreas fundamentais da tecnologia e eletrônica, com ensino prático e direcionado.</p>
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos Disponíveis</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>TBO - Técnico Básico Operacional</h3>
+        <p>Curso introdutório voltado à formação técnica geral, com base em informática, manutenção e noções de operação de sistemas tecnológicos.</p>
+        <p><strong>Carga horária:</strong> 80h<br><strong>Público-alvo:</strong> Iniciantes e profissionais em formação.</p>
+        <a class="btn" href="#contato">Inscreva-se</a>
+      </div>
+      <div class="course">
+        <h3>Eletrônica Básica</h3>
+        <p>Aprenda os princípios fundamentais da eletrônica: componentes, circuitos e montagem prática. Ideal para quem quer começar na área técnica.</p>
+        <p><strong>Carga horária:</strong> 100h<br><strong>Público-alvo:</strong> Estudantes e entusiastas de tecnologia.</p>
+        <a class="btn" href="#contato">Inscreva-se</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Quer saber mais ou se inscrever em um curso? Envie uma mensagem!</p>
+    <form onsubmit="alert('Mensagem enviada com sucesso! (demonstração)'); return false;">
+      <input type="text" name="nome" placeholder="Seu nome" required style="width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc;">
+      <input type="email" name="email" placeholder="Seu e-mail" required style="width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc;">
+      <textarea name="mensagem" placeholder="Escreva sua mensagem" required style="width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ccc;"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 com.brazil — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
